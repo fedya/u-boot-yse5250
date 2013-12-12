@@ -17,7 +17,7 @@ HOWTO build it u-boot for YSE5250?
 * add to $PATH binaries
 4. export CC=`pwd`/gcc-linaro-arm-linux-gnueabihf-4.8-2013.10_linux/bin/arm-linux-gnueabihf-
 
-make ARCH=arm CROSS_COMPILE=${CC} distclean
-make ARCH=arm CROSS_COMPILE=${CC} yse5250
+* make ARCH=arm CROSS_COMPILE=${CC} distclean
+* make ARCH=arm CROSS_COMPILE=${CC} yse5250
 
 last command should produce u-boot.bin
