@@ -262,7 +262,7 @@
 #define CONFIG_BOOTP_BOOTPATH
 
 #define CONFIG_ETHADDR		00:40:5c:26:0a:5b
-#define CONFIG_NETMASK      255.255.255.0
+#define CONFIG_NETMASK		255.255.255.0
 #define CONFIG_IPADDR		192.168.0.28
 #define CONFIG_SERVERIP		192.168.0.13
 #define CONFIG_GATEWAYIP	192.168.0.1
@@ -275,7 +275,7 @@
 #define CONFIG_BOOTCOMMAND	"movi read kernel 0 40008000;movi read rootfs 0 41000000 100000;bootm 40008000 41000000"
 #define CONFIG_BOOTARGS	""
 #define CONFIG_BOOTCOMMAND2 \
-	"mmc ersae boot 1 0 0;"	\
+	"mmc erase boot 1 0 0;"	\
 	"mmc erase user 1 1072 1;"	\
 	"movi r f 0 40000000;emmc open 1;movi w z f 1 40000000;emmc close 1;"	\
 	"movi r b 0 40004000;emmc open 1;movi w z b 1 40004000;emmc close 1;"	\
@@ -306,7 +306,7 @@
 #define CONFIG_SYS_LONGHELP		/* undef to save memory */
 #define CONFIG_SYS_HUSH_PARSER		/* use "hush" command parser	*/
 #define CONFIG_SYS_PROMPT_HUSH_PS2	"> "
-#define CONFIG_SYS_PROMPT		"[YSE5250@SCP]# "
+#define CONFIG_SYS_PROMPT		"[YSE5250@omv]# "
 #define CONFIG_SYS_CBSIZE	256	/* Console I/O Buffer Size */
 #define CONFIG_SYS_PBSIZE	384	/* Print Buffer Size */
 #define CONFIG_SYS_MAXARGS	16	/* max number of command args */
