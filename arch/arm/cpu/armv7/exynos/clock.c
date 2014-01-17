@@ -65,7 +65,7 @@ static ulong get_PLLCLK(int pllreg)
 static ulong get_PLLCLK(int pllreg)
 {
 	ulong r, m, p, s, k = 0, fout;
-	unsined int freq, pll_div2_sel, fout_sel;
+	unsigned int freq, pll_div2_sel, fout_sel;
 
 	if (pllreg == APLL) {
 		r = APLL_CON0_REG;
